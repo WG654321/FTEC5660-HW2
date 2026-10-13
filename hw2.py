@@ -97,7 +97,13 @@ Compare EVERY listed job and education item and EVERY claimed skill. One genuine
 discrepancy makes the CV invalid, even when everything else matches.
 Check only: name; city; jobs (company, title, seniority, start/end years);
 education (school, degree, field, graduation year); and skills.
-Do not judge job descriptions, headline, hometown, or omissions of profile skills.
+Do not judge job descriptions, headline, or hometown.
+SKILLS ARE A DIRECTIONAL SUBSET CHECK: iterate over EVERY skill written IN THE CV.
+For each CV skill, find an equivalent skill in the selected LinkedIn profile.
+A CV skill ABSENT FROM THE PROFILE IS A FALSE CLAIM: return discrepancy, never valid.
+Only the REVERSE direction is allowed: a profile skill absent from the CV is fine.
+Before returning valid, enumerate all CV skills and ensure none is profile-absent.
+Do not drop a CV skill from your comparison just because it is missing in the profile.
 Degree and field synonyms are equivalent (Bachelor of Science = BSc;
 UI/UX Design = UI/UX). Senior Engineer is valid for title Engineer with seniority
 senior, but not with junior/mid seniority. An unprefixed title does not claim a
