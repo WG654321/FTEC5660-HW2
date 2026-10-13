@@ -1,0 +1,140 @@
+[
+  {
+    "run": 1,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 57.67,
+    "source_sha256": "5e9db2bb0c9eafdfacd0bd34de7e95f585effb8cef462039f66e55944e3eb3bb",
+    "results": [
+      {
+        "cv": "CV_1.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_2.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_3.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_4.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_5.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_6.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_7.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      }
+    ],
+    "correct": 7,
+    "total": 7
+  },
+  {
+    "run": 2,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 51.38,
+    "source_sha256": "5e9db2bb0c9eafdfacd0bd34de7e95f585effb8cef462039f66e55944e3eb3bb",
+    "results": [
+      {
+        "cv": "CV_1.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_2.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_3.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_4.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_5.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_6.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_7.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      }
+    ],
+    "correct": 7,
+    "total": 7
+  },
+  {
+    "run": 3,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 49.57,
+    "source_sha256": "5e9db2bb0c9eafdfacd0bd34de7e95f585effb8cef462039f66e55944e3eb3bb",
+    "results": [
+      {
+        "cv": "CV_1.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_2.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_3.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_4.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_5.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_6.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_7.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      }
+    ],
+    "correct": 7,
+    "total": 7
+  }
+]

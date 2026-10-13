@@ -1,0 +1,140 @@
+[
+  {
+    "run": 1,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 59.74,
+    "source_sha256": "4484f322778c72c24fac7c620d914733f3909fcee379fbef6559870fc7a0475b",
+    "results": [
+      {
+        "cv": "CV_1.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_2.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_3.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_4.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_5.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_6.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_7.pdf",
+        "score": "0.5000",
+        "correctness": "correct"
+      }
+    ],
+    "correct": 7,
+    "total": 7
+  },
+  {
+    "run": 2,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 79.75,
+    "source_sha256": "4484f322778c72c24fac7c620d914733f3909fcee379fbef6559870fc7a0475b",
+    "results": [
+      {
+        "cv": "CV_1.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_2.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_3.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_4.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_5.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_6.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_7.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      }
+    ],
+    "correct": 7,
+    "total": 7
+  },
+  {
+    "run": 3,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 114.58,
+    "source_sha256": "4484f322778c72c24fac7c620d914733f3909fcee379fbef6559870fc7a0475b",
+    "results": [
+      {
+        "cv": "CV_1.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_2.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_3.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_4.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_5.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_6.pdf",
+        "score": "0.9500",
+        "correctness": "correct"
+      },
+      {
+        "cv": "CV_7.pdf",
+        "score": "0.0500",
+        "correctness": "correct"
+      }
+    ],
+    "correct": 7,
+    "total": 7
+  }
+]

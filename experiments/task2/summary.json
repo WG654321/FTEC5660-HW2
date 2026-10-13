@@ -1,0 +1,65 @@
+[
+  {
+    "run": 1,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 15.05,
+    "source_sha256": "770f40e6e5604def84d82bea6642ff26e7a1977603e4b065544f727bbaae0591",
+    "results": [
+      {
+        "cv": "adversarial_cv.pdf",
+        "score": "0.9500",
+        "correctness": "not graded: no ground truth for this CV"
+      },
+      {
+        "cv": "target_cv.pdf",
+        "score": "0.9500",
+        "correctness": "not graded: no ground truth for this CV"
+      }
+    ],
+    "correct": 0,
+    "total": 2
+  },
+  {
+    "run": 2,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 11.5,
+    "source_sha256": "770f40e6e5604def84d82bea6642ff26e7a1977603e4b065544f727bbaae0591",
+    "results": [
+      {
+        "cv": "adversarial_cv.pdf",
+        "score": "0.9500",
+        "correctness": "not graded: no ground truth for this CV"
+      },
+      {
+        "cv": "target_cv.pdf",
+        "score": "0.9500",
+        "correctness": "not graded: no ground truth for this CV"
+      }
+    ],
+    "correct": 0,
+    "total": 2
+  },
+  {
+    "run": 3,
+    "attempt": 1,
+    "exit_code": 0,
+    "seconds": 13.98,
+    "source_sha256": "770f40e6e5604def84d82bea6642ff26e7a1977603e4b065544f727bbaae0591",
+    "results": [
+      {
+        "cv": "adversarial_cv.pdf",
+        "score": "0.9500",
+        "correctness": "not graded: no ground truth for this CV"
+      },
+      {
+        "cv": "target_cv.pdf",
+        "score": "0.9500",
+        "correctness": "not graded: no ground truth for this CV"
+      }
+    ],
+    "correct": 0,
+    "total": 2
+  }
+]

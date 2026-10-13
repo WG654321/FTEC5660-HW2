@@ -1,0 +1,145 @@
+
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\hw2.py", line 389, in <module>
+  |     raise SystemExit(main())
+  |                      ~~~~^^
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\hw2.py", line 385, in main
+  |     return asyncio.run(run(args.cv_folder))
+  |            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+  |     return runner.run(main)
+  |            ~~~~~~~~~~^^^^^^
+  |   File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+  |     return self._loop.run_until_complete(task)
+  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  |   File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+  |     return future.result()
+  |            ~~~~~~~~~~~~~^^
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\hw2.py", line 368, in run
+  |     tools = await load_mcp_tools()
+  |             ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\hw2.py", line 68, in load_mcp_tools
+  |     return await client.get_tools()
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\langchain_mcp_adapters\client.py", line 213, in get_tools
+  |     tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+  |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\langchain_mcp_adapters\tools.py", line 590, in load_mcp_tools
+  |     async with create_session(
+  |                ~~~~~~~~~~~~~~^
+  |         connection, mcp_callbacks=mcp_callbacks
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as tool_session:
+  |     ^
+  |   File "C:\Python314\Lib\contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\langchain_mcp_adapters\sessions.py", line 455, in create_session
+  |     async with _create_streamable_http_session(**params) as session:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  |   File "C:\Python314\Lib\contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\langchain_mcp_adapters\sessions.py", line 360, in _create_streamable_http_session
+  |     streamable_http_client(
+  |     ~~~~~~~~~~~~~~~~~~~~~~^
+  |         url,
+  |         ^^^^
+  |         http_client=client,
+  |         ^^^^^^^^^^^^^^^^^^^
+  |         terminate_on_close=terminate_on_close,
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as (read, write, _),
+  |     ^
+  |   File "C:\Python314\Lib\contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\mcp\client\streamable_http.py", line 672, in streamable_http_client
+  |     async with anyio.create_task_group() as tg:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 847, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    |     yield
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    |     resp = await self._pool.handle_async_request(req)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    |     raise exc from None
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    |     response = await connection.handle_async_request(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         pool_request.request
+    |         ^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpcore\_async\http_proxy.py", line 316, in handle_async_request
+    |     stream = await stream.start_tls(**kwargs)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpcore\_async\http11.py", line 376, in start_tls
+    |     return await self._stream.start_tls(ssl_context, server_hostname, timeout)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpcore\_backends\anyio.py", line 67, in start_tls
+    |     with map_exceptions(exc_map):
+    |          ~~~~~~~~~~~~~~^^^^^^^^^
+    |   File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    |     raise to_exc(exc) from exc
+    | httpcore.ConnectError
+    |
+    | The above exception was the direct cause of the following exception:
+    |
+    | Traceback (most recent call last):
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\anyio\_core\_tasks.py", line 327, in _run_coro
+    |     retval = await self._coro
+    |              ^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\mcp\client\streamable_http.py", line 583, in handle_request_async
+    |     await self._handle_post_request(ctx)
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\mcp\client\streamable_http.py", line 361, in _handle_post_request
+    |     async with stream_within_origin(
+    |                ~~~~~~~~~~~~~~~~~~~~^
+    |         ctx.client,
+    |         ^^^^^^^^^^^
+    |     ...<3 lines>...
+    |         headers=headers,
+    |         ^^^^^^^^^^^^^^^^
+    |     ) as response:
+    |     ^
+    |   File "C:\Python314\Lib\contextlib.py", line 214, in __aenter__
+    |     return await anext(self.gen)
+    |            ^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\mcp\shared\_httpx_utils.py", line 132, in stream_within_origin
+    |     response = await client.send(request, stream=True, follow_redirects=False)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_client.py", line 1629, in send
+    |     response = await self._send_handling_auth(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<4 lines>...
+    |     )
+    |     ^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    |     response = await self._send_handling_redirects(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    |     response = await self._send_single_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    |     response = await transport.handle_async_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_transports\default.py", line 393, in handle_async_request
+    |     with map_httpcore_exceptions():
+    |          ~~~~~~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "D:\5660课程作业\HW2\FTEC5660-HW2\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    |     raise mapped_exc(message) from exc
+    | httpx.ConnectError
+    +------------------------------------

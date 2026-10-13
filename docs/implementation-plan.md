@@ -12,13 +12,19 @@ Execution: implement inline in the current dedicated homework checkout. No paral
 
 ## Deliverables and checks
 
-- [ ] Add behavioral tests in tests/test_verifier.py: missing evidence, incomplete coverage, invalid JSON, genuine discrepancy, isolated failures, bounded concurrency, timeout, and retry recovery.
-- [ ] Implement helper functions and VerificationAgent above build_agent in hw2.py; fill build_agent and score_cvs; leave protected code unchanged.
-- [ ] Run all unit tests and the public PDFs; investigate failures against evidence, without baking public labels into the agent.
-- [ ] Retrieve the target's actual MCP profile, create a reproducible attack PDF generator, inspect its appearance and extracted text, and test true and adversarial PDFs on the local verifier.
-- [ ] Repeat public evaluation three times and record actual outputs and timing. Retain failures in the experiment record rather than silently discarding them.
-- [ ] Replace report placeholders and revise reflection using the actual experiments, stating that instructor agents are unavailable.
-- [ ] Review diffs, validate unchanged upstream code and secret exclusion, test a fresh clone with a fresh environment, commit, and push to the confirmed fork.
+- [x] Add behavioral tests in tests/test_verifier.py: missing evidence, incomplete coverage, invalid JSON, genuine discrepancy, isolated failures, bounded concurrency, timeout, and retry recovery.
+- [x] Implement helper functions and VerificationAgent above build_agent in hw2.py; fill build_agent and score_cvs; leave protected code unchanged.
+- [x] Run all unit tests and the public PDFs; investigate failures against evidence, without baking public labels into the agent.
+- [x] Retrieve the target's actual MCP profile, create a reproducible attack PDF generator, inspect its appearance and extracted text, and test true and adversarial PDFs on the local verifier.
+- [x] Repeat public evaluation three times and record actual outputs and timing. Retain failures in the experiment record rather than silently discarding them.
+- [x] Replace report placeholders and revise reflection using the actual experiments, stating that instructor agents are unavailable.
+- [x] Review diffs, validate unchanged upstream code and secret exclusion, test a fresh clone with a fresh environment, and commit the implementation.
+
+Publication target authorized by the user: `WG654321/FTEC5660-HW2`, branch `main`.
+
+## Validation outcome
+
+17 behavioral tests passed. Final public runs: 7/7 each, with no fallbacks or launch retries, in 57.67, 51.38 and 49.57 seconds. Final attack/control runs: both PDFs scored 0.95 in all three rounds. Full evidence and earlier failures are retained in `experiments/`. The review finding about lost diagnostics on subprocess timeout was reproduced and fixed with a regression test. Further inspection corrected truncated identity searches and ambiguous skill-subset wording. The unstable Windows loopback proxy was bypassed only for the two relevant services in local configuration.
 
 ## Review focus
 
