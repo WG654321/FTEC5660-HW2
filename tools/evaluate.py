@@ -30,8 +30,12 @@ def main():
                     env={**os.environ, "PYTHONIOENCODING": "utf-8"}, timeout=1750,
                 )
                 code, stdout, stderr = proc.returncode, proc.stdout, proc.stderr
-            except subprocess.TimeoutExpired:
-                code, stdout, stderr = 124, "", "Evaluation subprocess exceeded 1750 seconds."
+            except subprocess.TimeoutExpired as exc:
+                def as_text(value):
+                    return value.decode("utf8", errors="replace") if isinstance(value, bytes) else (value or "")
+                code = 124
+                stdout = as_text(exc.stdout)
+                stderr = as_text(exc.stderr) + "\nEvaluation subprocess exceeded 1750 seconds."
             prefix = f"run{run}_attempt{attempt}"
             (output / f"{prefix}.log").write_text(stdout + "\n" + stderr, encoding="utf8")
             record = {"run": run, "attempt": attempt, "exit_code": code,
