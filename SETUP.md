@@ -14,7 +14,6 @@ $env:PIP_CACHE_DIR = Join-Path (Get-Location) '.cache'
 .\.venv\Scripts\python.exe -m pip check
 ```
 
-当前电脑 C 盘空间不足，因此上面的安装命令将临时文件及 pip 缓存放在项目所在的 D 盘。这些环境变量仅对当前 PowerShell 会话及其子进程生效，两个目录也已被 Git 忽略。
 
 复制 `.env.example` 为 `.env` 并在本机填写自己的 DeepSeek key。已有 `.env` 时不要覆盖它。`.env`、`.venv/` 和 `results.csv` 已被 Git 忽略。老师会使用自己的 key，任何提交文件中都不应包含真实 key。
 
